@@ -1,0 +1,32 @@
+YOB = int(input("Please enter your year of birth yyyy: "))
+
+candle = str((2019 - YOB))[-1]
+
+
+candles = int(candle) * "i"
+candle_row = candles.center(11, '_')
+
+
+
+candle_row =  candle_row.center(20)
+chappy = " "*3 + "|:H:a:p:p:y:|"
+birfday = "|:B:i:r:t:h:d:a:y:|"
+bottom = "~" * 19
+middle = " "*3 + "|" + " "*11 + "|"
+middle_two = "|" + "^" * 17 + "|"
+before_bottom = "|" + " " * 17 + "|"
+
+cake = f"""
+	{candle_row}
+	{chappy}
+	{middle}
+	{middle_two}
+	{birfday}
+	{before_bottom}
+	{bottom}
+ """
+
+if (YOB % 4 == 0):
+	print(cake * 2)
+else:
+	print(cake)
