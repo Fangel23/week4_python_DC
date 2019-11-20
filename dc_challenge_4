@@ -1,0 +1,62 @@
+# import sys
+# import random
+# # user_input = input("Enter a season: ")
+#
+# def get_random_temp(user_input):
+#
+#     if user_input == "Winter":
+#          return random.randint(-10,5)
+#
+#     elif user_input == "Autumn":
+#          return random.randint(6, 16)
+#     elif user_input == "Spring":
+#
+#          return random.randint(17, 28)
+#     elif user_input == "Summer":
+#
+#          return random.randint(29, 40)
+#
+#
+# def main(user_input):
+#     temp = get_random_temp(user_input)
+#     print(f"Hey boet the temperature is now {temp} degrees celcius")
+#
+#     if temp <= 0:
+#         print("Fuck me its cold")
+#     elif 0<temp<=16:
+#         print("Go outside you lazy fuck, it warming up!")
+#     elif temp > 16 and temp <=23:
+#         print("Move your lazy ass and go for a run")
+#     elif temp >23 and temp <= 32:
+#         print("Go to the beach and check out everyone with a body better than yours!")
+#     elif temp >32 and temp <= 40:
+#         print("It's tanning weather now ya bitches")
+#
+#
+#
+# if __name__=='__main__':
+#     args = sys.argv[1:]
+#
+#     main(*args)
+lst = []
+code = [['7','T','h','i','s','$','#','i',''],[' ','s','%',' ','M','a','t','r'],['3','i','x','#',' ',' ','%','!']]
+alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+special_characters = "%#$%!"
+
+for item in code:
+    for i in item:
+        if i in alpha:
+            print(i)
+            lst.append(i)
+        elif i in special_characters:
+            lst.append("")
+
+str1 = ''.join(lst)
+
+print(str1[0:4] + " " + str1[4:6] + " " + str1[6:12])
+
+
+
+
+
+
